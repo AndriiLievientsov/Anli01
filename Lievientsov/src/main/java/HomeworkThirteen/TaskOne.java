@@ -1,4 +1,4 @@
-package ua.ithillel.Lievientsov.HomeworkThirteen;
+package HomeworkThirteen;
 
 import java.util.Scanner;
 
