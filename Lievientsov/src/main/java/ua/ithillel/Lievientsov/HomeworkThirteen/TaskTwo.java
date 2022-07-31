@@ -4,12 +4,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Arrays;
-
 /*
  * - Заданы три целочисленных массива. Записать эти массивы в файл в паралельних потоках.
  * Создать класс SaveAsThread для представления потока, который записывает целочисленный массив в файл.
  */
-
 
 public class TaskTwo {
     public static void main(String[] args) throws IOException {
@@ -38,7 +36,6 @@ public class TaskTwo {
         thread1.start();
         thread2.start();
         thread3.start();
-
     }
 
     static class SaveAsThread implements Runnable {
@@ -77,6 +74,4 @@ public class TaskTwo {
             System.out.println("End thread: " + threadName);
         }
     }
-
-
 }
