@@ -1,7 +1,6 @@
 package ua.ithillel.Lievientsov.HomeworkThirteen;
 /*
 * ДЗ 13. Многопоточность.
-
 - Пользователь вводит с клавиатуры значение в массив. После чего запускаются два потока.
 * Первый поток находит максимум в массиве, второй — минимум. Результаты вычислений возвращаются в метод main().
 */
@@ -15,11 +14,9 @@ public class TaskOne {
         int size = input.nextInt();
         int[] array = new int[size];
         System.out.println("Insert array elements:");
-
         for (int i = 0; i < size; i++) {
             array[i] = input.nextInt();
         }
-
         ThreadMinMax thread1 = new ThreadMinMax(array);
         ThreadMinMax thread2 = new ThreadMinMax(array);
         try {
